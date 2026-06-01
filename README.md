@@ -1,10 +1,5 @@
 # Grounded
 
-## Overview
-Grounded is a claim‑verification web app that fetches an article, extracts specific claims, checks grounding against sources, and returns a detailed score. It consists of:
-- **Backend** – FastAPI server (`uvicorn backend.main:app`) hosted at **https://grounded-api-nyy1.onrender.com**.
-- **Frontend** – React UI (`npm start`) hosted at **https://grounded-f8gv.vercel.app**.
-
 ## Quick Start (Local Development)
 1. **Clone the repository**
    ```bash

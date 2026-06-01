@@ -4,6 +4,8 @@ import ArticleView from './components/ArticleView';
 import ResultsDashboard from './components/ResultsDashboard';
 import { CloudDownload, Search, ShieldCheck, BarChart3 } from 'lucide-react';
 
+const API_URL = process.env.REACT_APP_API_URL || "http://localhost:8000";
+
 const PRESETS = [
   { label: 'Sleep Health',  url: 'https://medlineplus.gov/healthysleep.html' },
   { label: 'Caffeine',      url: 'https://medlineplus.gov/caffeine.html' },
@@ -101,7 +103,7 @@ function CompareMode({ onClose }) {
     setLoading(true); setError(null); setResult(null);
     const t0 = Date.now();
     try {
-      const res = await fetch('http://localhost:8000/analyze', {
+      const res = await fetch(`${API_URL}/analyze`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ url: fixed }),
@@ -186,7 +188,7 @@ export default function App() {
 
   async function handleAnalyze(targetUrl = url) {
     let payload = {};
-    let endpoint = 'http://localhost:8000/analyze';
+    let endpoint = `${API_URL}/analyze`;
 
     if (mode === 'URL') {
       const fixed = normalizeUrl(targetUrl);
@@ -196,7 +198,7 @@ export default function App() {
     } else {
       if (!textInput.trim()) return;
       payload = { text: textInput };
-      endpoint = 'http://localhost:8000/analyze-text';
+      endpoint = `${API_URL}/analyze-text`;
     }
 
     setLoading(true);

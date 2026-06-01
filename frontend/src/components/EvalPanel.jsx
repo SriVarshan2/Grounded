@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { ChevronDown, ChevronUp, BarChart2, Play, Loader2, Info } from 'lucide-react';
 import { evalArticles } from '../eval_data';
 
+const API_URL = process.env.REACT_APP_API_URL || "http://localhost:8000";
+
 /**
  * EvalPanel Component
  * Displays confusion matrix and classification benchmarks (F1, Precision, Recall, Accuracy).
@@ -17,7 +19,7 @@ export default function EvalPanel() {
     setLoading(true);
     setError(null);
     try {
-      const response = await fetch('http://localhost:8000/evaluate', {
+      const response = await fetch(`${API_URL}/evaluate`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

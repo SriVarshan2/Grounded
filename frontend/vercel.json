@@ -1,8 +1,8 @@
 {
+  "env": {
+    "REACT_APP_API_URL": "https://grounded-api-nyy1.onrender.com"
+  },
   "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }

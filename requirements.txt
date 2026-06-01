@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+spacy
+beautifulsoup4
+requests
+python-dotenv
+pydantic
+scikit-learn
+numpy
+pandas
+lxml
+httpx
+lxml_html_clean

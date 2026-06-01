@@ -1,0 +1,119 @@
+export const evalArticles = [
+  {
+    "url": "https://example.com/green-tea-health",
+    "text": "Drinking green tea daily has several benefits. A study in the Journal of Medicine confirms green tea reduces blood pressure. It contains antioxidants that support cardiovascular health.",
+    "sentences": [
+      "Drinking green tea daily has several benefits.",
+      "A study in the Journal of Medicine confirms green tea reduces blood pressure.",
+      "It contains antioxidants that support cardiovascular health."
+    ],
+    "links": [
+      {
+        "href": "https://pubmed.ncbi.nlm.nih.gov/12345",
+        "anchor_text": "Journal of Medicine",
+        "surrounding_sentence": "A study in the Journal of Medicine confirms green tea reduces blood pressure."
+      }
+    ],
+    "human_label": "quality"
+  },
+  {
+    "url": "https://example.com/magic-weightloss-pill",
+    "text": "This magic pill will make you lose 10 pounds in 3 days. It suppresses appetite and boosts metabolism. Try it now to improve your fitness by 100%!",
+    "sentences": [
+      "This magic pill will make you lose 10 pounds in 3 days.",
+      "It suppresses appetite and boosts metabolism.",
+      "Try it now to improve your fitness by 100%!"
+    ],
+    "links": [],
+    "human_label": "slop"
+  },
+  {
+    "url": "https://example.com/exercise-lifespan",
+    "text": "Physical activity is crucial. Routine cardiovascular exercise improves heart function. According to the CDC, exercise is proven to increase lifespan by 5 years. This is supported by researchers in 2021.",
+    "sentences": [
+      "Physical activity is crucial.",
+      "Routine cardiovascular exercise improves heart function.",
+      "According to the CDC, exercise is proven to increase lifespan by 5 years.",
+      "This is supported by researchers in 2021."
+    ],
+    "links": [],
+    "human_label": "quality"
+  },
+  {
+    "url": "https://example.com/weird-joint-cure",
+    "text": "Cure your joint pain with this one simple trick. Eating this special herb fights inflammation and cures arthritis in up to 90% of cases. It decreases pain and improves mobility dramatically.",
+    "sentences": [
+      "Cure your joint pain with this one simple trick.",
+      "Eating this special herb fights inflammation and cures arthritis in up to 90% of cases.",
+      "It decreases pain and improves mobility dramatically."
+    ],
+    "links": [],
+    "human_label": "slop"
+  },
+  {
+    "url": "https://example.com/nut-heart-study",
+    "text": "Eating nuts has positive benefits. A meta-analysis published in 2019 shows that eating walnuts daily reduces risk of heart attack by 15%. This evidence suggests nuts support arterial flexibility.",
+    "sentences": [
+      "Eating nuts has positive benefits.",
+      "A meta-analysis published in 2019 shows that eating walnuts daily reduces risk of heart attack by 15%.",
+      "This evidence suggests nuts support arterial flexibility."
+    ],
+    "links": [],
+    "human_label": "quality"
+  },
+  {
+    "url": "https://example.com/anti-aging-scam",
+    "text": "Reverse your age with our new cream. It accelerates cell renewal and slows skin aging. It reduces wrinkles by 45% and improves skin glow within one week.",
+    "sentences": [
+      "Reverse your age with our new cream.",
+      "It accelerates cell renewal and slows skin aging.",
+      "It reduces wrinkles by 45% and improves skin glow within one week."
+    ],
+    "links": [],
+    "human_label": "slop"
+  },
+  {
+    "url": "https://example.com/vaccine-efficacy",
+    "text": "Vaccines prevent severe disease. Medical data shows that the vaccine prevents hospitalization by 94%. According to the FDA, the latest trial confirmed its safety profile.",
+    "sentences": [
+      "Vaccines prevent severe disease.",
+      "Medical data shows that the vaccine prevents hospitalization by 94%.",
+      "According to the FDA, the latest trial confirmed its safety profile."
+    ],
+    "links": [],
+    "human_label": "quality"
+  },
+  {
+    "url": "https://example.com/caffeine-focus",
+    "text": "Drink coffee to double your brain power. Coffee stimulates cognitive performance and improves memory retention by 50% immediately. It protects brain cells from fatigue.",
+    "sentences": [
+      "Drink coffee to double your brain power.",
+      "Coffee stimulates cognitive performance and improves memory retention by 50% immediately.",
+      "It protects brain cells from fatigue."
+    ],
+    "links": [],
+    "human_label": "slop"
+  },
+  {
+    "url": "https://example.com/berry-cognition",
+    "text": "Blueberries are a superfood. Research shows that wild berries improve memory in older adults (2020). Harvard researchers also found that berries decrease cognitive decline.",
+    "sentences": [
+      "Blueberries are a superfood.",
+      "Research shows that wild berries improve memory in older adults (2020).",
+      "Harvard researchers also found that berries decrease cognitive decline."
+    ],
+    "links": [],
+    "human_label": "quality"
+  },
+  {
+    "url": "https://example.com/cancer-slop",
+    "text": "Kill cancer cells with hot water. Drinking hot water daily fights cancer cells. It suppresses tumor growth and cures cancer in up to 80% of patients.",
+    "sentences": [
+      "Kill cancer cells with hot water.",
+      "Drinking hot water daily fights cancer cells.",
+      "It suppresses tumor growth and cures cancer in up to 80% of patients."
+    ],
+    "links": [],
+    "human_label": "slop"
+  }
+];

@@ -1,0 +1,158 @@
+{
+    "metrics": {
+        "precision": 1.0,
+        "recall": 0.4166666666666667,
+        "f1_score": 0.5882352941176471,
+        "accuracy": 0.65,
+        "threshold": 0.6,
+        "total_articles": 20
+    },
+    "confusion_matrix": {
+        "tp": 5,
+        "tn": 8,
+        "fp": 0,
+        "fn": 7
+    },
+    "results": [
+        {
+            "url": "https://medlineplus.gov/healthysleep.html",
+            "gap": 0.47,
+            "predicted": "quality",
+            "actual": "quality",
+            "correct": true
+        },
+        {
+            "url": "https://medlineplus.gov/caffeine.html",
+            "gap": 0.5,
+            "predicted": "quality",
+            "actual": "quality",
+            "correct": true
+        },
+        {
+            "url": "https://medlineplus.gov/vitamind.html",
+            "gap": 0.0,
+            "predicted": "quality",
+            "actual": "quality",
+            "correct": true
+        },
+        {
+            "url": "https://medlineplus.gov/dietarysupplements.html",
+            "gap": 0.0,
+            "predicted": "quality",
+            "actual": "quality",
+            "correct": true
+        },
+        {
+            "url": "https://www.nhlbi.nih.gov/health/sleep-deprivation",
+            "gap": 0.43,
+            "predicted": "quality",
+            "actual": "quality",
+            "correct": true
+        },
+        {
+            "url": "https://www.cdc.gov/healthyweight/healthy_eating/index.html",
+            "gap": 0.25,
+            "predicted": "quality",
+            "actual": "quality",
+            "correct": true
+        },
+        {
+            "url": "https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/caffeine/art-20045678",
+            "gap": 0.25,
+            "predicted": "quality",
+            "actual": "quality",
+            "correct": true
+        },
+        {
+            "url": "https://www.nhs.uk/live-well/eat-well/food-types/fish-and-shellfish-nutrition/",
+            "gap": 0.26,
+            "predicted": "quality",
+            "actual": "quality",
+            "correct": true
+        },
+        {
+            "url": "https://www.healthychildren.org/English/healthy-living/nutrition/Pages/The-Case-for-Eating-Breakfast.aspx",
+            "gap": 0.85,
+            "predicted": "slop",
+            "actual": "slop",
+            "correct": true
+        },
+        {
+            "url": "https://www.webmd.com/diet/health-benefits-of-turmeric",
+            "gap": 0.85,
+            "predicted": "slop",
+            "actual": "slop",
+            "correct": true
+        },
+        {
+            "url": "https://www.webmd.com/diet/health-benefits-of-magnesium",
+            "gap": 0.85,
+            "predicted": "slop",
+            "actual": "slop",
+            "correct": true
+        },
+        {
+            "url": "https://www.webmd.com/vitamins-and-supplements/health-benefits-vitamin-c",
+            "gap": 0.85,
+            "predicted": "slop",
+            "actual": "slop",
+            "correct": true
+        },
+        {
+            "url": "https://www.healthline.com/nutrition/10-proven-benefits-of-blueberries",
+            "gap": 0.07,
+            "predicted": "quality",
+            "actual": "slop",
+            "correct": false
+        },
+        {
+            "url": "https://www.healthline.com/nutrition/vitamin-d-deficiency-symptoms",
+            "gap": 0.02,
+            "predicted": "quality",
+            "actual": "slop",
+            "correct": false
+        },
+        {
+            "url": "https://www.healthline.com/nutrition/magnesium-benefits",
+            "gap": 0.01,
+            "predicted": "quality",
+            "actual": "slop",
+            "correct": false
+        },
+        {
+            "url": "https://www.healthline.com/nutrition/coffee-good-or-bad",
+            "gap": 0.0,
+            "predicted": "quality",
+            "actual": "slop",
+            "correct": false
+        },
+        {
+            "url": "https://www.healthline.com/nutrition/10-benefits-of-exercise",
+            "gap": 0.0,
+            "predicted": "quality",
+            "actual": "slop",
+            "correct": false
+        },
+        {
+            "url": "https://www.webmd.com/diet/health-benefits-of-zinc",
+            "gap": 0.85,
+            "predicted": "slop",
+            "actual": "slop",
+            "correct": true
+        },
+        {
+            "url": "https://www.healthline.com/nutrition/melatonin",
+            "gap": 0.0,
+            "predicted": "quality",
+            "actual": "slop",
+            "correct": false
+        },
+        {
+            "url": "https://www.healthline.com/nutrition/13-ways-sugary-soda-is-bad-for-you",
+            "gap": 0.0,
+            "predicted": "quality",
+            "actual": "slop",
+            "correct": false
+        }
+    ]
+}

@@ -5,10 +5,6 @@ Grounded is a claim‑verification web app that fetches an article, extracts spe
 - **Backend** – FastAPI server (`uvicorn backend.main:app`) hosted at **https://grounded-api-nyy1.onrender.com**.
 - **Frontend** – React UI (`npm start`) hosted at **https://grounded-f8gv.vercel.app**.
 
-## Deployment Links
-- Frontend: https://grounded-f8gv.vercel.app
-- Backend: https://grounded-api-nyy1.onrender.com
-
 ## Quick Start (Local Development)
 1. **Clone the repository**
    ```bash

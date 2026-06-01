@@ -1,14 +1,24 @@
+import nltk
+import os
+
+# Download nltk data on startup
+nltk_data_dir = "/tmp/nltk_data"
+os.makedirs(nltk_data_dir, exist_ok=True)
+nltk.data.path.append(nltk_data_dir)
+nltk.download('punkt', download_dir=nltk_data_dir, quiet=True)
+nltk.download('punkt_tab', download_dir=nltk_data_dir, quiet=True)
+
+from nltk.tokenize import sent_tokenize
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import time
 import sys
-import os
 
 # Ensure backend directory is in python path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from extractor import fetch_article, nlp
+from extractor import fetch_article
 from claims import extract_claims
 from grounder import check_grounding
 from scorer import compute_score
@@ -129,12 +139,11 @@ def analyze_text(request: AnalyzeTextRequest):
             detail="Article too short to analyze meaningfully. Need at least 20 words."
         )
 
-    # Segment sentences using spaCy
-    doc = nlp(raw_text[:50000])
+    # Segment sentences using NLTK
     sentences = [
-        sent.text.strip()
-        for sent in doc.sents
-        if len(sent.text.strip()) > 20
+        s.strip()
+        for s in sent_tokenize(raw_text[:50000])
+        if len(s.strip()) > 20
     ]
     
     if not sentences:
